@@ -33,7 +33,7 @@ Une application de visualisation et d’analyse de données de films, basée sur
 ### 1. Cloner le dépôt
 
 ```bash
-git clone https://github.com/votre-utilisateur/movie-analytics-app.git
+git clone https://github.com/sagnolkamdem/movie-analytics-app.git
 cd movie-analytics-app
 ```
 
@@ -56,13 +56,13 @@ pip install -r requirements.txt
 Créer un fichier `.env` à la racine contenant :
 
 ```env
-MONGO_URI=mongodb+srv://<username>:<password>@<cluster-url>/test?retryWrites=true&w=majority
-MONGO_DB=movies_db
-MONGO_COLLECTION=movies
+MONGO_URI=...
+MONGO_DB=....
+MONGO_COLLECTION=...
 
-NEO4J_URI=neo4j+s://<neo4j-uri>
-NEO4J_USER=neo4j
-NEO4J_PASSWORD=your_password
+NEO4J_URI=...
+NEO4J_USER=...
+NEO4J_PASSWORD=...
 ```
 
 > 🔐 Remplace les valeurs par tes vraies informations MongoDB et Neo4j.
@@ -118,5 +118,8 @@ streamlit run app.py
 ## 🧠 Auteurs
 
 - Projet réalisé dans le cadre du cours **NoSQL** à l’**ESIEA**
-- Développé avec ❤️ par [Votre Nom ou Équipe]
+- Développé avec ❤️ par :
+  - Hind KHAYATI
+  - Amira FATHALLA
+  - Sagnol Boutal KAMDEM DJOKO
 
