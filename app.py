@@ -28,14 +28,19 @@ from databases.neo4j_connection import connect_neo4j
 st.set_page_config(page_title="Projet NoSQL", layout="wide")
 st.title("📊 Projet NoSQL - MongoDB & Neo4j")
 
+# Selection de la BD
 menu = st.sidebar.selectbox("📂 Choisir une base de données :", ["Accueil", "MongoDB", "Neo4j"])
 
+# Traitement concernant l'accueil
 if menu == "Accueil":
     st.subheader("Bienvenue 👋")
     st.markdown("- Explore MongoDB (documents)")
     st.markdown("- Explore Neo4j (graphes)")
 
+# Traitement concernant la page pour les requêtes MongoDb
 elif menu == "MongoDB":
+
+    # Titre de la page
     st.header("📁 Requêtes MongoDB")
     try:
         collection = connect_mongodb()
@@ -110,7 +115,10 @@ elif menu == "MongoDB":
     except Exception as e:
         st.error(f"❌ Erreur de connexion à MongoDB : {e}")
 
+# Traitement concernant la page pour les requêtes MongoDb
 elif menu == "Neo4j":
+
+    #Titre de la page
     st.header("🔗 Connexion à Neo4j")
     try:
         driver = connect_neo4j()
